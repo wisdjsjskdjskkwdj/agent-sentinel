@@ -1,0 +1,8 @@
+#!/bin/bash
+DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+if [ -f "$DIR/agent_sentinel_macos" ]; then
+    exec python3 "$DIR/agent_sentinel_macos" "$@"
+elif [ -f "$DIR/agent_sentinel_macos.py" ]; then
+    exec python3 "$DIR/agent_sentinel_macos.py" "$@"
+fi

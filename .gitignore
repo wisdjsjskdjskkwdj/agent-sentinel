@@ -1,0 +1,28 @@
+# ==========================================
+# Agent Sentinel Suite - Git Ignore Rules
+# ==========================================
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Build artifacts & temp logs (Keep precompiled release binaries)
+*.obj
+*.pdb
+*.suo
+*.user
+*.log
+agent_live.log
+.tmp/
+temp/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
